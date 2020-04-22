@@ -14,7 +14,7 @@ Dark green: #28b485
 }
 
 body {
-    font-family: "lato" sans-serif;
+    font-family: "lato" ;
     font-weight: 400;
     line-height: 1.7;
     font-size: 16px;
@@ -30,3 +30,65 @@ body {
     height: 95vh;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
 }
+.logo-box {
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+.logo {
+    position: absolute;
+    height: 35px;
+}
+.header-item-primery {
+ position: absolute;
+ top: 40%;
+ left: 50%;
+ transform: translate(-50%,-50%);   
+}
+
+.header-item-primery {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.header-item-primery-main {
+display: block;
+font-size: 60px;
+font-weight: 400;
+letter-spacing: 35px;
+animation: MoveInLeft 1s ease-out;
+}
+.header-item-primery-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation: MoveInRight 1s ease-out ;
+}
+
+@keyframes MoveInLeft {
+0%{
+opacity: 0;
+transform: translateX(-100px);
+}
+80%{
+transform:translateX(10px)
+}
+100%{
+opacity:1;
+transform: translateX(0);
+}
+}
+
+@keyframes MoveInRight {
+    0%{
+    opacity: 0;
+    transform: translateX(100px);
+    }
+    80%{
+    transform:translateX(-10px)
+    }
+    100%{
+    opacity:1;
+    transform: translateX(0);
+    }
+    }
