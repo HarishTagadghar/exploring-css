@@ -31,24 +31,25 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
 }
 .logo-box {
-    position: relative;
-    top: 40px;
-    left: 40px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
 }
 .logo {
-    position: absolute;
     height: 35px;
 }
-.header-item-primery {
- position: absolute;
- top: 40%;
- left: 50%;
- transform: translate(-50%,-50%);   
+.header-item {
+    text-transform: uppercase;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);   
+    text-align: center;
 }
-
 .header-item-primery {
     color: #ffffff;
-    text-transform: uppercase;
+    margin-bottom: 60px;
+   
 }
 .header-item-primery-main {
 display: block;
@@ -65,6 +66,33 @@ animation: MoveInLeft 1s ease-out;
     animation: MoveInRight 1s ease-out ;
 }
 
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 100px;
+    transition: all .1s;
+    
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2) ; 
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2) ; 
+}
+.btn-white {
+    background-color: #fff;
+    color: #777;
+    
+}
+.btn-animated{
+    animation: MoveInTop .5s ease-out .75s;
+    animation-fill-mode: backwards;
+
+}
 @keyframes MoveInLeft {
 0%{
 opacity: 0;
@@ -92,3 +120,14 @@ transform: translateX(0);
     transform: translateX(0);
     }
     }
+
+@keyframes MoveInTop {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
