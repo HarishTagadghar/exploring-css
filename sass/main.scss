@@ -1,0 +1,148 @@
+
+$color-primary: #55c57a;
+$color-primary-light:#28b485e1;
+$color-primary-dark: #7ed56fde;
+$color-gray:#777;
+$color-white:#ffffff;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    
+}
+body {
+    font-family: "lato" ;
+    font-weight: 400;
+    line-height: 1.7;
+    /* font-size: 16px; */
+    color: $color-gray;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.header{
+    background-image: linear-gradient( to right bottom , $color-primary-dark , $color-primary-light) ,
+    url('../img/hero.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+
+    &-item {
+        text-transform: uppercase;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);   
+        text-align: center;
+
+        &-primery {
+            color: $color-white;
+            margin-bottom: 6rem;
+           
+
+            &-main {
+                display: block;
+                font-size: 6rem;
+                font-weight: 400;
+                letter-spacing: 3.5rem;
+                animation: MoveInLeft 1s ease-out;
+                
+                }
+                &-sub {
+                    display: block;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    letter-spacing: 1.75rem;
+                    animation: MoveInRight 1s ease-out ;
+                }
+        }
+
+    }
+   
+    
+}
+.logo-box {
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+}
+.logo {
+    height: 3.5rem;
+}
+
+.btn{
+    &:link,
+    &:visited {
+        text-decoration: none;
+        display: inline-block;
+        padding: 1.5rem 5rem;
+        border-radius: 100px;
+        transition: all .1s;
+        font-size: 1.6rem;
+        
+    }
+    &:hover{
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.2) ; 
+    }
+    &:active{
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2) ; 
+    }
+    &-white {
+        background-color: $color-white;
+        color: $color-gray;
+        
+    }
+    &-animated{
+        animation: MoveInTop .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    
+    }
+}
+
+
+@keyframes MoveInLeft {
+0%{
+opacity: 0;
+transform: translateX(-10rem);
+}
+80%{
+transform:translateX(1rem)
+}
+100%{
+opacity:1;
+transform: translateX(0);
+}
+}
+
+@keyframes MoveInRight {
+    0%{
+    opacity: 0;
+    transform: translateX(10rem);
+    }
+    80%{
+    transform:translateX(-1rem)
+    }
+    100%{
+    opacity:1;
+    transform: translateX(0);
+    }
+    }
+
+@keyframes MoveInTop {
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

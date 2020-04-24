@@ -1,0 +1,25 @@
+{
+  "name": "Nature",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass --watch sass/main.scss  css/style.css",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarishTagadghar/exploring-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarishTagadghar/exploring-css/issues"
+  },
+  "homepage": "https://github.com/HarishTagadghar/exploring-css#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "node-sass-chokidar": "^1.4.0"
+  }
+}
