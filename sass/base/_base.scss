@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    
+}
+body {
+    font-family: "lato" ;
+    font-weight: 400;
+    line-height: 1.7;
+    /* font-size: 16px; */
+    color: $color-gray;
+    padding: 3rem;
+    box-sizing: border-box;
+}
