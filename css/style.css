@@ -1,3 +1,31 @@
+@keyframes MoveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes MoveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes MoveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +42,30 @@ body {
   color: #777;
   padding: 3rem;
   box-sizing: border-box; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.5rem 5rem;
+  border-radius: 100px;
+  transition: all .1s;
+  font-size: 1.6rem; }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn-white {
+  background-color: #ffffff;
+  color: #777; }
+
+.btn-animated {
+  animation: MoveInTop .5s ease-out .75s;
+  animation-fill-mode: backwards; }
 
 .header {
   background-image: linear-gradient(to right bottom, #7ed56fde, #28b485e1), url("../img/hero.jpg");
@@ -51,55 +103,3 @@ body {
 
 .logo {
   height: 3.5rem; }
-
-.btn:link, .btn:visited {
-  text-decoration: none;
-  display: inline-block;
-  padding: 1.5rem 5rem;
-  border-radius: 100px;
-  transition: all .1s;
-  font-size: 1.6rem; }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-.btn-white {
-  background-color: #ffffff;
-  color: #777; }
-
-.btn-animated {
-  animation: MoveInTop .5s ease-out .75s;
-  animation-fill-mode: backwards; }
-
-@keyframes MoveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes MoveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes MoveInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
