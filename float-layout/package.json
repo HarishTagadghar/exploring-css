@@ -1,0 +1,17 @@
+{
+  "name": "float-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "compile" : "node-sass --watch sass/main.scss  css/style.css ",
+  "start":"live-server"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
