@@ -5,7 +5,11 @@
     background-position: top;
     height: 95vh;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
-
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+    @include respond(phone){
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+    }
     &-item {
         text-transform: uppercase;
         position: absolute;
@@ -25,7 +29,10 @@
                 font-weight: 400;
                 letter-spacing: 3.5rem;
                 animation: MoveInLeft 1s ease-out;
-                
+                @include respond(phone){
+                    font-size: 4rem;
+                    letter-spacing: 2.5rem;
+                }
                 }
                 &-sub {
                     display: block;
@@ -33,6 +40,10 @@
                     font-weight: 700;
                     letter-spacing: 1.75rem;
                     animation: MoveInRight 1s ease-out ;
+                    @include respond(phone){
+                        font-size: 1.5rem;
+                        letter-spacing: 1rem;
+                    }
                 }
         }
 

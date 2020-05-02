@@ -16,6 +16,14 @@
         cursor: pointer;
         box-shadow: 0 1.5rem 4rem rgba($color-black , .3);
 
+        @include respond(tab){
+            top: 4rem;
+            right: 4rem;
+        }
+        @include respond(tab){
+            top: 4rem;
+            right: 4rem;
+        }
     }
     &-background {
         width: 6rem;
@@ -24,10 +32,18 @@
         border-radius: 50%;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient( #7ed56f , #28b485);
+        background-image: radial-gradient( #4ed56f , #28b485);
         z-index: 1000;
         transition: all .5s;
-
+            
+        @include respond(tab){
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+        @include respond(phone){
+            top: 4.3rem;
+            right: 4.3rem;
+        }
         // transform: scale(90);
     }
     &-nav {

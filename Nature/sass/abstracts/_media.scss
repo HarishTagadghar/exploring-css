@@ -1,0 +1,23 @@
+/*
+mediaquery manager
+0-600px = phone size
+600-900px = tablate 
+900-1200px = tablate landscape
+1200-1800px = normal desktop 
+1800px+ = big screen
+
+mixin arguments
+phone = 600px
+tab = 900px
+tab-land = 1200px
+big-screen = 1800 min-width
+*/
+
+//1em = 16px
+
+@mixin respond($breakpoint) {
+        @if $breakpoint == phone { @media (max-width: 37.5em) {@content};} //600px
+        @if $breakpoint == tab { @media (max-width: 56.25em) {@content};} //900px
+        @if $breakpoint == tab-land { @media (max-width: 75em) {@content};} //1200px
+        @if $breakpoint == big-screen { @media (min-width: 112.5em) {@content};} //1800px
+}
