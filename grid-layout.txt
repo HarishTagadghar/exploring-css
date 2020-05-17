@@ -1,1 +1,2 @@
-https://codepen.io/HariahTg/pen/QWjZPBB?editors=1100
+https://codepen.io/HariahTg/pen/QWjZPBB?editors=1100 > basic of grid
+https://codepen.io/HariahTg/pen/bGVmyeQ?editors=1100 > normal template of grid
